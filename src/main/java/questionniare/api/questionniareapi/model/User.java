@@ -12,7 +12,7 @@ public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer userId;
     private String name;
-    private String Surname;
+    private String surname;
     private String email;
     private Integer number;
     
@@ -23,7 +23,7 @@ public class User {
     public User(Integer userId, String name, String surname, String email, Integer number) {
         this.userId = userId;
         this.name = name;
-        Surname = surname;
+        this.surname = surname;
         this.email = email;
         this.number = number;
     }
@@ -60,14 +60,14 @@ public class User {
      * @return String return the Surname
      */
     public String getSurname() {
-        return Surname;
+        return surname;
     }
 
     /**
      * @param Surname the Surname to set
      */
     public void setSurname(String Surname) {
-        this.Surname = Surname;
+        this.surname = Surname;
     }
 
     /**
